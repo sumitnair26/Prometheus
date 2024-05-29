@@ -3,6 +3,7 @@ const app = express();
 
 //Midleware to track time taken by API
 
+//@ts-ignore
 function middleware(req, res, next) {
     const startTime = Date.now();
     next();
