@@ -7,7 +7,7 @@ const activeUserGauge = new client.Gauge({
     labelNames: ["method", "route"]
 });
 //@ts-ignore
-export const requestCount = (req, res, next) => {
+export const activeUser = (req, res, next) => {
 
 
     activeUserGauge.inc({
